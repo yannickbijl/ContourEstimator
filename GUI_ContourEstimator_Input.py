@@ -13,7 +13,7 @@ class GUI_ContourEstimator_Input(wx.Panel):
         wx.Panel.__init__(self, bb_parent, style=wx.BORDER_SUNKEN)
 
         # Input Parameters
-        self.chain_code = wx.TextCtrl(self)
+        self.chain_code = wx.TextCtrl(self, style=wx.TE_MULTILINE)
 
         # Buttons
         self.calc = wx.Button(self, label="Calculate")
