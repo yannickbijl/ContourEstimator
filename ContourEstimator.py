@@ -59,16 +59,18 @@ class ContourEstimator(wx.Frame):
         sys.exit()
 
     def next_frame(self, event):
-        def set_values():
-            est = ESC_ContourEstimator(self.contourinput.chain_code.GetValue())
+        def set_values(chain):
+            est = ESC_ContourEstimator(chain)
             self.contouroutput.simple.SetLabel(str(est.get_simple()))
             self.contouroutput.freeman.SetLabel(str(est.get_freeman()))
             self.contouroutput.groen_verbeek.SetLabel(str(est.get_groen_verbeek()))
             self.contouroutput.profitt_rosen.SetLabel(str(est.get_profitt_rosen()))
             self.contouroutput.vossepoel_smeulders.SetLabel(str(est.get_vossepoel_smeulders()))
         
-        if bool(re.match('^[0-7]+$', self.contourinput.chain_code.GetValue())):
-            set_values()
+        chain = self.contourinput.chain_code.GetValue()
+        chain = chain.replace("\n", "").replace(" ", "").replace("\t", "")
+        if bool(re.match('^[0-7]+$', chain)):
+            set_values(chain)
             self.hiding()
             self.dic['B'].Show()
             self.Layout()
