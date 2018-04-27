@@ -12,6 +12,6 @@ The program uses the chaincode to calculate the length of the contour using diff
 
 * Simple    L = N<sub>e</sub> + N<sub>o</sub>
 * Freeman   L = N<sub>e</sub> + sqrt(2) \* N<sub>o</sub>
-* Groen-Verbeek   L = N<sub>e</sub> + N<sub>o</sub>
-* Profitt-Rosen   L = N<sub>e</sub> + N<sub>o</sub>
-* Vossepoel-Smeulders    L = N<sub>e</sub> + N<sub>o</sub> - N<sub>c</sub>
+* Groen-Verbeek   L = 1.059 \* N<sub>e</sub> + 1.183 \* N<sub>o</sub>
+* Profitt-Rosen   L = 0.984 \* N<sub>e</sub> + 1.340 \* N<sub>o</sub>
+* Vossepoel-Smeulders    L = 0.980 \* N<sub>e</sub> + 1.406 \* N<sub>o</sub> - 0.091 \* N<sub>c</sub>
