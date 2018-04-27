@@ -10,7 +10,7 @@ Program to calculate the contour length using different estimators. The contour 
 
 The program uses the chaincode to calculate the length of the contour using different estimators. These are:
 
-* Simple                  ''' L = '''
+* Simple    L = N<sub>e</sub>
 * Freeman
 * Groen-Verbeek
 * Profitt-Rosen
