@@ -11,7 +11,7 @@ Program to calculate the contour length using different estimators. The contour 
 The program uses the chaincode to calculate the length of the contour using different estimators. These are:
 
 * Simple    L = N<sub>e</sub> + N<sub>o</sub>
-* Freeman   L = N<sub>e</sub> + \sqrt{2} N<sub>o</sub>
+* Freeman   L = N<sub>e</sub> + sqrt(2) \* N<sub>o</sub>
 * Groen-Verbeek   L = N<sub>e</sub> + N<sub>o</sub>
 * Profitt-Rosen   L = N<sub>e</sub> + N<sub>o</sub>
 * Vossepoel-Smeulders    L = N<sub>e</sub> + N<sub>o</sub> - N<sub>c</sub>
