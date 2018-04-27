@@ -15,3 +15,5 @@ The program uses the chaincode to calculate the length of the contour using diff
 * Groen-Verbeek:   L = 1.059 \* N<sub>e</sub> + 1.183 \* N<sub>o</sub>
 * Profitt-Rosen:   L = 0.984 \* N<sub>e</sub> + 1.340 \* N<sub>o</sub>
 * Vossepoel-Smeulders:    L = 0.980 \* N<sub>e</sub> + 1.406 \* N<sub>o</sub> - 0.091 \* N<sub>c</sub>
+
+L is the length to be calculated, N<sub>e</sub> is the number of even digits in the chaincode, N<sub>o</sub> is the number of odd digits in the chaincode, and N<sub>c</sub> is the number of times a change of direction is detected.
