@@ -22,7 +22,7 @@ The program uses the modules sys, math, re and the third-party module wx-python 
 
 The executable was made using pyinstaller on Windows 10 Home-edition 64-bit.
 
-In the project folder open the cmd and use the command: pyinstaller -F --icon=ContourEstimator.ico -w ContourEstimator.py
+In the project folder open the cmd and use the command: **pyinstaller -F --icon=ContourEstimator.ico -w ContourEstimator.py**
 
 The icon was made in Adobe Illustrator
 
